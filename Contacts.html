@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./libs/lightbox/css/lightbox.css" rel="stylesheet" />
     <title>AllThingsRL/Contacts</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/ContactsStyle.css">
@@ -15,20 +16,73 @@
     <div class="side"></div>
     <div class="middle">
         <img src="images/HomePage/AllThingsRL_Logo.jpg" width="250" height="250"alt="AllThingsRL_Logo">
-        <img src="images/Contacts/1.jpg" width="400" height="250" alt="Esports Logo">
+        <img src="images/Contacts/1.jpg" width="415" height="250" alt="Esports Logo">
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="RLNews.html">News</a></li>
-            <li><a href="RLEsports.html">Esports</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="RLNews.html"> RLNews <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="RLEsports.html">RLEsports</a>
+                            <a class="dropdown-item" href="FRewards.html">Fan Rewards</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Contacts.html">Contacts<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
 
         <b>You can find us and contact us on these social platforms: </b>
 
-            <li>Gmail(allthingsrl@gmail.com)</li>
-            <li>Twitter (@allthingsrl)</li>
-            <li>Youtube  (AllThingsRL)</li>
-            <li>Instagram (AllThingsRL)</li>
+        <table class="table table-dark">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">twitter</th>
+                <th scope="col">instagram</th>
+                <th scope="col">@gmail.com</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="bg-success">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>@Allthingsrl</td>
+                <td>@AllThingsRL</td>
+                <td>allthingsrl</td>
+            </tr>
+            <tr class="bg-danger">
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>@eSportsAllthingsrl</td>
+                <td>@eSportsAllThingsRL</td>
+                <td>esportsallthingsrl</td>
+            </tr>
+            <tr class="bg-info">
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>@NewsAllthingsrl</td>
+                <td>@NewsAllThingsRL</td>
+                <td>newsallthingsrl</td>
+            </tr>
+            </tbody>
+        </table>
 
         <div class="mapouter"><div class="gmap_canvas">
             <iframe width="950" height="400" id="gmap_canvas"
@@ -38,10 +92,13 @@
             </div>
         </div>
 
-
     </div>
     <div class="side"></div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
